@@ -1,6 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { HOMEPAGE_URL } from '../config';
+import { IoLogoGithub } from 'react-icons/io5/index.js'
 ---
 
 <header class="fixed w-full pq2 z-20 backdrop-blur-md">
@@ -11,7 +12,7 @@ import { HOMEPAGE_URL } from '../config';
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
 		<HeaderLink href={HOMEPAGE_URL}>About</HeaderLink>
-		<HeaderLink href="https://github.com/Nutthaweed" target="_blank">GitHub</HeaderLink>
+		<HeaderLink href="https://github.com/Nutthaweed" target="_blank"><IoLogoGithub/>GitHub</HeaderLink>
 		</div>
 		<div class="flex-1">
 
