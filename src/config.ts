@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'Tool that I use';
 export const SITE_DESCRIPTION = 'Tool and Program that I use to Code!';
+export const HOMEPAGE_URL = 'https://mywebsite-nutthaweed.vercel.app/'
