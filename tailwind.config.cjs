@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				vRound: [" 'Varela Round' ",'Verdana' , 'sans-serif']
+				Varela: [" 'Varela Round' ",'Verdana' , 'sans-serif']
 			}
 		},
 	},
