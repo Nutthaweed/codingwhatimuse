@@ -1,19 +1,18 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../config';
+import { HOMEPAGE_URL, SITE_TITLE } from '../config';
 ---
 
 <header class="fixed w-full pq2 z-20 backdrop-blur-md">
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
+	<div class="mx-autop max-w-3xl">
+	<nav class="flex items-center gap-3 text-base">
+		<h2 class="font-semibold tracking-tighter p-2 font-varela">{SITE_TITLE}</h2>
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
+		<HeaderLink href={HOMEPAGE_URL}>About</HeaderLink>
 		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
 	</nav>
+	</div>
 </header>
 <style>
 	header {
