@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../config';
 import Body from '../components/Body.astro'
 import Content from '../components/Content.astro'
 import { IoArrowForward } from 'react-icons/io5';
+import Masthead from '../components/Masthead.astro'
 ---
 
 <!DOCTYPE html>
@@ -16,7 +17,7 @@ import { IoArrowForward } from 'react-icons/io5';
 	<Body>
 		<Header title={SITE_TITLE} />
 		<main class="pt-[56px]">
-			<h1 class="font-varela text-center">Tool that I use</h1>
+			<Masthead />
 			<Content>
 				<section>
 					<p class="mb-8 indent-4">You guys ask me about what tools did I use, I&apos;ve been speding hours to make this website to you at my desk ever day. So, I&apos;ve been continously imporving my coding skill to boost my workspace and craft.
