@@ -1,11 +1,14 @@
 ---
-
+import { Image } from '@astrojs/image/components'
+import wallpaper from '../images/wallpaper.jpg'
 ---
 
 <section class="relative mb-6 h-80 flex justify-center items-center">
-    <div class="absolute w-full h-full overflow-hidden">Masthead</div>
+    <div class="absolute w-full h-full overflow-hidden">
+        <Image src={wallpaper} class="absolute h-auto  min-w-full min-h-full object-cover "/>
+    </div>
     <div class="z-10 text-center px-8 drop-shadow-lg shadow-black">
-        <div class="uppercase text-sm mb-4 font-varela">Welcome to</div>
+        <div class="uppercase text-sm mb-4 font-varela">Hello this website all about</div>
         <div class="text-4xl font-varela font-medium">A tool and Program list that I <span class="text-white dark:text-red-300">use</span></div>
     </div>
 </section>
